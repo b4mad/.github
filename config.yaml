@@ -1,0 +1,88 @@
+admins:
+  - durandom
+  - goern
+billing_email: webmaster@b4mad.net
+company: "#B4mad"
+default_repository_permission: none
+description: ""
+email: ""
+has_organization_projects: true
+has_repository_projects: true
+location: ""
+members:
+  - b4hubotnic
+  - sesheta
+members_can_create_repositories: false
+name: "#B4mad.Net"
+repos:
+  .github:
+    default_branch: main
+    has_issues: false
+    has_projects: false
+    has_wiki: false
+    private: true
+  airdata:
+    archived: true
+    description:
+      Rails engine for adding aviation related models and data to your
+      web application
+    has_issues: false
+    has_projects: true
+  auddress:
+    archived: true
+    description: Automatic Addressbook
+    has_issues: false
+    has_projects: true
+  minecraft:
+    description: Minecraft Server - Operate First
+    has_projects: false
+    has_wiki: false
+  op1st-ipfs:
+    default_branch: main
+    has_projects: true
+  racing:
+    default_branch: main
+    has_projects: true
+  racing-archived:
+    archived: true
+    has_projects: false
+    has_wiki: false
+  racing-website:
+    has_projects: false
+    has_wiki: false
+  sirius:
+    archived: true
+    has_issues: false
+    has_projects: true
+  website:
+    default_branch: main
+    description: This is our website...
+    has_issues: false
+    has_projects: false
+    has_wiki: false
+teams:
+  Owners:
+    description: ""
+    maintainers:
+      - durandom
+      - goern
+    privacy: secret
+    repos:
+      auddress: admin
+  SourceOps:
+    description: ""
+    maintainers:
+      - durandom
+      - goern
+    members:
+      - sesheta
+    privacy: closed
+    repos:
+      airdata: admin
+      auddress: admin
+      minecraft: admin
+      op1st-ipfs: admin
+      racing: read
+      racing-archived: admin
+      sirius: admin
+      website: admin
