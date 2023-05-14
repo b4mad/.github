@@ -15,7 +15,7 @@ presubmits:
     decorate: true
     run_if_changed: config.yaml
     skip_report: false
-    context: community-management/prow/peribolos
+    context: op1st/prow/peribolos
     spec:
       containers:
         - image: gcr.io/k8s-prow/peribolos:latest
@@ -47,7 +47,7 @@ presubmits:
     decorate: true
     run_if_changed: labels.yaml
     skip_report: false
-    context: community-management/prow/labels
+    context: op1st/prow/labels
     spec:
       containers:
         - image: gcr.io/k8s-prow/label_sync:latest
@@ -74,7 +74,7 @@ postsubmits:
     decorate: true
     run_if_changed: ^config\.yaml$
     skip_report: false
-    context: community-management/prow/peribolos
+    context: op1st/prow/peribolos
     branches:
       - ^main$
     spec:
@@ -105,31 +105,35 @@ postsubmits:
         - name: github-oauth
           secret:
             secretName: oauth-token
+
   - name: b4mad-labels
     decorate: true
     run_if_changed: ^(config|labels)\.yaml$
     skip_report: false
-    context: community-management/prow/labels
+    context: op1-st/prow/labels
     branches:
       - ^main$
     spec:
       containers:
         - image: gcr.io/k8s-prow/label_sync:latest
-          command:
-            - /bin/sh
           args:
-            - -c
-            - |
-              set -ex
-              /ko-app/label_sync \
-              --config=labels.yaml \
-              --orgs=b4mad \
-              --token=/etc/github/oauth \
-              --confirm
+            - --config=labels.yaml
+            - --orgs=b4mad
+            - --github-endpoint=http://ghproxy
+            - --github-endpoint=https://api.github.com
+            - --github-app-id=$(GITHUB_APP_ID)
+            - --github-app-private-key-path=/etc/github/cert
+            - --confirm
+          env:
+            - name: GITHUB_APP_ID
+              valueFrom:
+                secretKeyRef:
+                  name: github-token
+                  key: appid
           volumeMounts:
-            - name: github-oauth
+            - name: github-token
               mountPath: /etc/github
       volumes:
-        - name: github-oauth
+        - name: github-token
           secret:
-            secretName: oauth-token
+            secretName: github-token
