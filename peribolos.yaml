@@ -6,13 +6,14 @@ orgs:
     billing_email: webmaster@b4mad.net
     company: ""
     default_repository_permission: none
-    description: "#B4mad"
+    description: '#B4mad'
     email: webmaster@b4mad.net
     has_organization_projects: true
     has_repository_projects: true
     location: ""
     members:
-      - b4hubotnic
+      - famanx
+      - schwesig
       - sesheta
     members_can_create_repositories: false
     name: '#B4mad.Net'
@@ -22,40 +23,84 @@ orgs:
         has_issues: false
         has_projects: false
         has_wiki: false
-        private: false
       airdata:
+        allow_merge_commit: false
+        allow_rebase_merge: false
+        allow_squash_merge: false
+        archived: true
         description: Rails engine for adding aviation related models and data to your web application
         has_issues: false
         has_projects: true
-        archived: true
+        has_wiki: false
       auddress:
+        allow_merge_commit: false
+        allow_rebase_merge: false
+        allow_squash_merge: false
         description: Automatic Addressbook
         has_issues: false
-        has_projects: false
-        archived: true
+        has_projects: true
       minecraft:
+        allow_merge_commit: false
+        allow_rebase_merge: false
+        allow_squash_merge: false
         description: Minecraft Server - Operate First
         has_projects: false
         has_wiki: false
-      op1st-ipfs:
+      op1st-emea-b4mad:
+        allow_merge_commit: false
+        allow_rebase_merge: false
+        allow_squash_merge: false
         default_branch: main
+        description: 'this is #B4mad partition of Operate First'
         has_projects: true
-      racing:
+      op1st-emea-b4mad-nostromo:
+        allow_merge_commit: false
+        allow_rebase_merge: false
+        allow_squash_merge: false
+        archived: true
         default_branch: main
-        has_projects: true
-        has_issues: true
+        has_projects: false
         has_wiki: false
+      op1st-emea-b4mad-phobos:
+        allow_merge_commit: false
+        allow_rebase_merge: false
+        allow_squash_merge: false
+        default_branch: main
+        has_projects: false
+        has_wiki: false
+      racing:
+        allow_merge_commit: false
+        allow_rebase_merge: false
+        allow_squash_merge: false
+        default_branch: main
+        description: Community-driven SimRacing data collection and analysis
+        has_projects: false
+        has_wiki: false
+        homepage: https://b4mad.racing
       racing-archived:
+        allow_merge_commit: false
+        allow_rebase_merge: false
+        allow_squash_merge: false
+        archived: true
         has_projects: false
         has_wiki: false
       racing-website:
+        allow_merge_commit: false
+        allow_rebase_merge: false
+        allow_squash_merge: false
         has_projects: false
         has_wiki: false
       sirius:
+        allow_merge_commit: false
+        allow_rebase_merge: false
+        allow_squash_merge: false
         archived: true
         has_issues: false
         has_projects: true
       website:
+        allow_merge_commit: false
+        allow_rebase_merge: false
+        allow_squash_merge: false
         default_branch: main
         description: This is out website...
         has_issues: false
@@ -74,14 +119,13 @@ orgs:
         description: ""
         maintainers:
           - goern
-        members:
           - sesheta
         privacy: closed
         repos:
           airdata: admin
           auddress: admin
           minecraft: admin
-          op1st-ipfs: admin
+          op1st-emea-b4mad-nostromo: read
           racing: admin
           racing-archived: admin
           sirius: admin
