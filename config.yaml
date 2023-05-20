@@ -40,7 +40,7 @@ repos:
     default_branch: main
     has_projects: true
   op1st-emea-b4mad-nostromo:
-    has_projects: false 
+    has_projects: false
     has_wiki: false
   racing:
     default_branch: main
@@ -84,9 +84,9 @@ teams:
       airdata: admin
       auddress: admin
       minecraft: admin
-      op1st-emea-b4mad-nostromo: admin 
+      op1st-emea-b4mad-nostromo: admin
       op1st-ipfs: admin
       racing-archived: admin
-      racing: admin 
+      racing: admin
       sirius: admin
       website: admin
