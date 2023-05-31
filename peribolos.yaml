@@ -12,6 +12,7 @@ orgs:
     has_repository_projects: true
     location: ""
     members:
+      - brownsen
       - famanx
       - schwesig
       - sesheta
