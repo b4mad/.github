@@ -41,7 +41,8 @@ orgs:
       op1st-emea-b4mad:
         default_branch: main
         description: 'this is #B4mad partition of Operate First'
-        has_projects: true
+        has_projects: false
+        has_wiki: false
       op1st-emea-b4mad-nostromo:
         archived: true
         default_branch: main
