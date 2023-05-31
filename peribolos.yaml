@@ -35,7 +35,7 @@ orgs:
         description: Automatic Addressbook
         has_issues: false
         has_projects: true
-        has_wike: false
+        has_wiki: false
       minecraft:
         description: Minecraft Server - Operate First
         has_projects: false
