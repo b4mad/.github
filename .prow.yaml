@@ -115,13 +115,17 @@ postsubmits:
       containers:
         - image: gcr.io/k8s-prow/label_sync:latest
           args:
-            - --config=labels.yaml
-            - --orgs=b4mad
-            - --github-endpoint=http://ghproxy
-            - --github-endpoint=https://api.github.com
-            - --github-app-id=$(GITHUB_APP_ID)
-            - --github-app-private-key-path=/etc/github/cert
-            - --confirm
+            - -c
+            - |
+              set -ex
+              /ko-app/label_sync \
+              --config=labels.yaml \
+              --orgs=b4mad \
+              --github-endpoint=http://ghproxy \
+              --github-endpoint=https://api.github.com \
+              --github-app-id=$(GITHUB_APP_ID) \
+              --github-app-private-key-path=/etc/github/cert \
+              --confirm
           env:
             - name: GITHUB_APP_ID
               valueFrom:
