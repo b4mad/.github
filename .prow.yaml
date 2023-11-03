@@ -58,6 +58,7 @@ presubmits:
               /ko-app/label_sync \
               --config=labels.yaml \
               --orgs=b4mad \
+              --skip b4mad/pre-commit-kustomize \
               --token=/etc/github/oauth
           volumeMounts:
             - name: github-oauth
@@ -121,6 +122,7 @@ postsubmits:
               /ko-app/label_sync \
               --config=labels.yaml \
               --orgs=b4mad \
+              --skip b4mad/pre-commit-kustomize \
               --github-endpoint=http://ghproxy \
               --github-endpoint=https://api.github.com \
               --github-app-id=$(GITHUB_APP_ID) \
