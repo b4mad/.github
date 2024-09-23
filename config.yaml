@@ -1,110 +1,128 @@
 orgs:
-  b4mad:
-    admins:
-      - durandom
-      - goern
-    billing_email: webmaster@b4mad.net
-    company: ""
-    default_repository_permission: none
-    description: "#B4mad"
-    email: webmaster@b4mad.net
-    has_organization_projects: true
-    has_repository_projects: true
-    location: ""
-    members:
-      - brownsen
-      - famanx
-      - schwesig
-      - sesheta
-      - thorsdottir
-    members_can_create_repositories: false
-    name: "#B4mad.Net"
-    repos:
-      .github:
-        default_branch: main
-        has_issues: false
-        has_projects: false
-        has_wiki: false
-      airdata:
-        archived: true
-        description: Rails engine for adding aviation related models and data to your web application
-        has_issues: false
-        has_projects: true
-        has_wiki: false
-      auddress:
-        archived: true
-        description: Automatic Addressbook
-        has_issues: false
-        has_projects: true
-        has_wiki: false
-      minecraft:
-        description: Minecraft Server - Operate First
-        has_projects: false
-        has_wiki: false
-      op1st-emea-b4mad:
-        default_branch: main
-        description: "this is #B4mad partition of Operate First"
-        has_projects: false
-        has_wiki: false
-      op1st-emea-b4mad-nostromo:
-        archived: true
-        default_branch: main
-        has_projects: false
-        has_wiki: false
-      op1st-emea-b4mad-phobos:
-        default_branch: main
-        has_projects: false
-        has_wiki: false
-      pre-commit-kustomize:
-        default_branch: main
-        has_projects: false
-        has_wiki: false
-      racing:
-        default_branch: main
-        description: Community-driven SimRacing data collection and analysis
-        has_projects: false
-        has_wiki: false
-        homepage: https://b4mad.racing
-      racing-archived:
-        archived: true
-        has_projects: false
-        has_wiki: false
-      racing-website:
-        has_projects: false
-        has_wiki: false
-      sirius:
-        archived: true
-        has_issues: false
-        has_projects: true
-      website:
-        default_branch: main
-        description: This is our website...
-        has_issues: false
-        has_projects: false
-        has_wiki: false
-    teams:
-      Owners:
-        description: ""
-        maintainers:
-          - durandom
-          - goern
-        privacy: secret
+    b4mad:
+        admins:
+            - durandom
+            - goern
+        billing_email: webmaster@b4mad.net
+        company: ""
+        default_repository_permission: none
+        description: "#B4mad"
+        email: webmaster@b4mad.net
+        has_organization_projects: true
+        has_repository_projects: true
+        location: ""
+        members:
+            - brownsen
+            - famanx
+            - schwesig
+            - sesheta
+            - thorsdottir
+        members_can_create_repositories: false
+        name: "#B4mad.Net"
         repos:
-          auddress: admin
-      SourceOps:
-        description: ""
-        maintainers:
-          - goern
-          - sesheta
-          - thorsdottir
-        privacy: closed
-        repos:
-          airdata: admin
-          auddress: admin
-          minecraft: admin
-          op1st-emea-b4mad: admin
-          pre-commit-kustomize: admin
-          racing: admin
-          racing-archived: admin
-          sirius: admin
-          website: admin
+            .github:
+                default_branch: main
+                has_issues: false
+                has_projects: false
+                has_wiki: false
+            airdata:
+                archived: true
+                description: Rails engine for adding aviation related models and data to your web application
+                has_issues: false
+                has_projects: true
+                has_wiki: false
+            auddress:
+                archived: true
+                description: Automatic Addressbook
+                has_issues: false
+                has_projects: true
+                has_wiki: false
+            mds-moderator:
+                default_branch: main
+                description: "Moderator for the machdenstaat.de"
+                has_issues: true
+                has_projects: false
+                has_wiki: false
+            minecraft:
+                description: Minecraft Server - Operate First
+                has_projects: false
+                has_wiki: false
+            op1st-emea-b4mad:
+                default_branch: main
+                description: "this is #B4mad partition of Operate First"
+                has_projects: false
+                has_wiki: false
+            op1st-emea-b4mad-nostromo:
+                archived: true
+                default_branch: main
+                has_projects: false
+                has_wiki: false
+            op1st-emea-b4mad-phobos:
+                default_branch: main
+                has_projects: false
+                has_wiki: false
+            pre-commit-kustomize:
+                default_branch: main
+                has_projects: false
+                has_wiki: false
+            racing:
+                default_branch: main
+                description: Community-driven SimRacing data collection and analysis
+                has_projects: false
+                has_wiki: false
+                homepage: https://b4mad.racing
+            racing-paddock:
+                default_branch: main
+                description: Community-driven SimRacing data collection and analysis
+                has_projects: false
+                has_wiki: false
+                homepage: https://b4mad.racing
+            racing-telemetry:
+                default_branch: main
+                description: Community-driven SimRacing data collection and analysis
+                has_projects: false
+                has_wiki: false
+                homepage: https://b4mad.racing
+            racing-archived:
+                archived: true
+                has_projects: false
+                has_wiki: false
+            racing-website:
+                has_projects: false
+                has_wiki: false
+            sirius:
+                archived: true
+                has_issues: false
+                has_projects: true
+            website:
+                default_branch: main
+                description: This is our website...
+                has_issues: false
+                has_projects: false
+                has_wiki: false
+        teams:
+            Owners:
+                description: ""
+                maintainers:
+                    - durandom
+                    - goern
+                privacy: secret
+                repos:
+                    auddress: admin
+            SourceOps:
+                description: ""
+                maintainers:
+                    - goern
+                    - sesheta
+                    - thorsdottir
+                privacy: closed
+                repos:
+                    airdata: admin
+                    auddress: admin
+                    minecraft: admin
+                    op1st-emea-b4mad: admin
+                    pre-commit-kustomize: admin
+                    racing: admin
+                    racing-archived: admin
+                    sirius: admin
+                    website: admin
