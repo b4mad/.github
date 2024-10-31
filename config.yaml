@@ -77,6 +77,12 @@ orgs:
                 has_projects: false
                 has_wiki: false
                 homepage: https://b4mad.racing
+            racing-databox:
+                default_branch: main
+                description: A web-based telemetry visualization tool for racing data.
+                has_projects: false
+                has_wiki: false
+                homepage: https://b4mad.racing
             racing-telemetry:
                 default_branch: main
                 description: Community-driven SimRacing data collection and analysis
